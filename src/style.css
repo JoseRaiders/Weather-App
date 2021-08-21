@@ -19,12 +19,15 @@ ul {
 li {
   list-style: none;
   color: #878787;
+  text-transform: capitalize;
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
 }
+
+/* ---APP SETUP--- */
 
 .weather-app-wrapper {
   max-width: 600px;
@@ -59,3 +62,5 @@ li {
   font-size: 16px;
   top: -34px;
 }
+
+/* ---SEARCH--- */

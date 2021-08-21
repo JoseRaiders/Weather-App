@@ -18,25 +18,24 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Los Angeles</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Friday 9:25</li>
-              <li>Clear</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
             <div class="col-6">
               <div class="clearfix weather-temp">
                 <img class="float-left" src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" />
-                <div class="float-left"><strong>68</strong><span class="units">°F | <a href="#">°C</a></span>
+                <div class="float-left"><strong id="temperature"></strong><span class="units">°F | <a href="#">°C</a></span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 2%</li>
-                <li>Humidity: 82%</li>
-                <li>Wind: 6 mph</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> mph</li>
               </ul>
             </div>
           </div>
