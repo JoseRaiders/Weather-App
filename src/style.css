@@ -66,4 +66,12 @@ li:first-letter {
   top: -34px;
 }
 
-/* ---SEARCH--- */
+/* --- UNITS--- */
+.weather-temp .active {
+  color: #000;
+  cursor: default;
+}
+
+.weather-temp .active:hover {
+  text-decoration: none;
+}
