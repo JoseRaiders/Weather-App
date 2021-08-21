@@ -16,22 +16,29 @@
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-        <h1>Los Angeles</h1>
-        <ul>
-          <li>Friday 9:25</li>
-          <li>Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" />
-            68 °F | °C
-          </div>
-          <div class="col-6">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>Los Angeles</h1>
             <ul>
-              <li>Precipitation: 2%</li>
-              <li>Humidity: 82%</li>
-              <li>Wind: 6 mph</li>
+              <li>Friday 9:25</li>
+              <li>Clear</li>
             </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temp">
+                <img class="float-left" src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" />
+                <div class="float-left"><strong>68</strong><span class="units">°F | <a href="#">°C</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 2%</li>
+                <li>Humidity: 82%</li>
+                <li>Wind: 6 mph</li>
+              </ul>
+            </div>
           </div>
         </div>
         <small><a href="https://github.com/JoseRaiders/Weather-App" target="_blank">Open-source code</a> by Anuska Jose</small>
