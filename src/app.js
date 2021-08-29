@@ -59,7 +59,6 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "754ef6f31ce264860cfc37f3accd1fdf";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
@@ -125,5 +124,11 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+let btn = document.querySelector(".btn-toggle");
+
+btn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-theme");
+});
 
 search("Los Angeles");

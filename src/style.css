@@ -1,5 +1,5 @@
 /* ---GLOBAL--- */
-body {
+* {
   font-family: 'Roboto', arial, sans-serif;
 }
 
@@ -30,6 +30,22 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+
+/* ---DARK MODE--- */
+body {
+  color: #222;
+  background: #fff;
+}
+
+body.dark-theme {
+  color: #fff;
+  background: #121212;
+}
+
+body.dark-theme a {
+  color: #809fff;
+}
+
 /* ---APP SETUP--- */
 
 .weather-app-wrapper {
@@ -54,7 +70,6 @@ li:first-letter {
 }
 
 .weather-temp strong {
-  color: #000;
   font-size: 64px;
   font-weight: 400;
   line-height: 1;
@@ -68,7 +83,7 @@ li:first-letter {
 
 /* --- UNITS--- */
 .weather-temp .active {
-  color: #000;
+  color: #878787;
   cursor: default;
 }
 
@@ -79,7 +94,6 @@ li:first-letter {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000;
 }
 
 .weather-forecast-date {
